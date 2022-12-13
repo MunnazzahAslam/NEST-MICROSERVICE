@@ -6,12 +6,23 @@ import { Transport, ClientsModule } from '@nestjs/microservices';
 @Module({
   imports: [
     ClientsModule.register([
-      { name: 'HELLO_SERVICE', transport: Transport.TCP },
+      {
+        name: 'NOTIFICATION_SERVICE', transport: Transport.RMQ,
+        options: {
+          urls: ['amqp://localhost:Error: Socket closed abruptly 
+          during opening handshake
+          '],
+          queue: 'user-messages',
+          queueOptions: {
+            durable: false
+          },
+        },
+      },
     ]),
   ],
   controllers: [AppController],
   providers: [AppService],
 })
 export class AppModule {
-  
+
 }

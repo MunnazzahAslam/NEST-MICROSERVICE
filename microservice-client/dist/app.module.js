@@ -16,7 +16,16 @@ AppModule = __decorate([
     common_1.Module({
         imports: [
             microservices_1.ClientsModule.register([
-                { name: 'HELLO_SERVICE', transport: microservices_1.Transport.TCP },
+                {
+                    name: 'NOTIFICATION_SERVICE', transport: microservices_1.Transport.RMQ,
+                    options: {
+                        urls: ['amqp://localhost:5672'],
+                        queue: 'user-messages',
+                        queueOptions: {
+                            durable: false
+                        },
+                    },
+                },
             ]),
         ],
         controllers: [app_controller_1.AppController],

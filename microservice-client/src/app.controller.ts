@@ -1,19 +1,12 @@
 import { Controller, Get, Inject } from '@nestjs/common';
-import { AppService } from './app.service';
 import { ClientProxy } from '@nestjs/microservices';
-import { Message } from './message.event';
 
 @Controller()
 export class AppController {
-  constructor(@Inject('HELLO_SERVICE') private readonly client: ClientProxy) { }
-
-  async onApplicationBootstrap() {
-    await this.client.connect();
-  }
+  constructor(@Inject('NOTIFICATION_SERVICE') private readonly client: ClientProxy) { }
 
   @Get()
-  getHello() {
-    this.client.emit<any>('message_printed', new Message('Data updated'));
-    return 'Data updated';
+  getNotified() {
+    this.client.emit<any>('data_updated', JSON.stringify({data: 'Data updated!'}));
   }
 }

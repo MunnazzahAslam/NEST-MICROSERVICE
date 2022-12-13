@@ -1101,10 +1101,6 @@
         "version": "e0e01013f40a172c13d53c88ce2695741df27852da7ede9e2e336c86c43c8ec5",
         "signature": "e0e01013f40a172c13d53c88ce2695741df27852da7ede9e2e336c86c43c8ec5"
       },
-      "../src/app.service.ts": {
-        "version": "5beff7929c20fd272f0743814575fc910dabaadfc5d528a094fa3647a5df1f2c",
-        "signature": "d8f4cb0109c1b399d657807fd6af504d74a9300325e0fc915abdbf658b464a97"
-      },
       "../node_modules/@nestjs/microservices/interfaces/client-grpc.interface.d.ts": {
         "version": "192735b3685518f37991fd140b0f13f5f2e2d3ad1c0f618689f5437f8328ec1c",
         "signature": "192735b3685518f37991fd140b0f13f5f2e2d3ad1c0f618689f5437f8328ec1c"
@@ -1517,16 +1513,16 @@
         "version": "ff3a45e62d966d8cd7735588a451801ff62aa34060e5124457c99e2220f9d1d3",
         "signature": "ff3a45e62d966d8cd7735588a451801ff62aa34060e5124457c99e2220f9d1d3"
       },
-      "../src/message.event.ts": {
-        "version": "4471249ad1f9dc906664601848653504f4e566ca677df50465379203de59fc76",
-        "signature": "3d95e84619601737451a684afb99f930a2a7b4a8491562a29047cdedd85fa249"
-      },
       "../src/app.controller.ts": {
-        "version": "d2d07eabe602e2f181f7790eddb5146efc1cf03f86e7e7cf693b19ea11ddc20d",
-        "signature": "f46d78878e6f098e46cb8f3086026319bcb5177d75aedad3e16325b30756bcbb"
+        "version": "14cad386bc1e0dfe95ca543fc5d596eb1724e80d3a8787af9bb0018e1c77217a",
+        "signature": "b0cc15f8f0b6a3f20a38269275b0c13e57cded68ec2cf505103ccda2507ec604"
+      },
+      "../src/app.service.ts": {
+        "version": "5421e0a46677dc1341e18fc803e2a7a16263edb5cd884f80dd252a541880a78c",
+        "signature": "2386daedc1c47a9fb94925195a2ac3be1781c27d2920d676d81d8ef4d82fe4a3"
       },
       "../src/app.module.ts": {
-        "version": "d48aba9244c7c86528666a372b418dbdfa730927f9810248cd1d7415379cfb70",
+        "version": "c03e12d71450e4e7e25573c3774bf70ac55a0b9190d9003901c69f7e949fb07b",
         "signature": "9fc7f7b6ad854404973b8cba8e6d883f758237991968e9a3965d716d46f1da88"
       },
       "../src/main.ts": {
@@ -3863,13 +3859,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/app.service.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../node_modules/@nestjs/microservices/interfaces/client-grpc.interface.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -4776,17 +4765,16 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/message.event.ts": [
+      "../src/app.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/microservices/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/app.controller.ts": [
+      "../src/app.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../src/app.service.ts",
-        "../node_modules/@nestjs/microservices/index.d.ts",
-        "../src/message.event.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
