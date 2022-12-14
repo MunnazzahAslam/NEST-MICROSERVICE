@@ -21,6 +21,7 @@ let AppController = class AppController {
     }
     getNotified() {
         this.client.emit('data_updated', new message_event_1.Message('Data updated!'));
+        return 'Data updated!';
     }
 };
 __decorate([

@@ -1518,8 +1518,8 @@
         "signature": "e9e35f1db166e62732ebf6897d7d166b19bcdbf8de0570bf4fd0bf4f697cae53"
       },
       "../src/app.controller.ts": {
-        "version": "2504410155e89acf9a0a9f1a3d93828517a42a003b1970213541a33c6ee30853",
-        "signature": "b0cc15f8f0b6a3f20a38269275b0c13e57cded68ec2cf505103ccda2507ec604"
+        "version": "65f75d1a02ae22483ceff88e1f2fc76862df03c69e4e15780e1c2c95c67263b0",
+        "signature": "de634b8dd662777eab5e1dc72e817eca6c395effee6fc4d775550c3ed8628109"
       },
       "../src/app.service.ts": {
         "version": "5421e0a46677dc1341e18fc803e2a7a16263edb5cd884f80dd252a541880a78c",
