@@ -1,6 +1,7 @@
 import { PrismaService } from 'src/prisma/prisma.service';
+import { NotificationDto } from './dto/notification.dto';
 export declare class NotificationService {
     private prisma;
     constructor(prisma: PrismaService);
-    printMessage(label: string): Promise<import(".prisma/client").Notification>;
+    printMessage(data: NotificationDto): Promise<import(".prisma/client").Notification>;
 }

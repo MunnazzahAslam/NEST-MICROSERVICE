@@ -1513,8 +1513,12 @@
         "version": "ff3a45e62d966d8cd7735588a451801ff62aa34060e5124457c99e2220f9d1d3",
         "signature": "ff3a45e62d966d8cd7735588a451801ff62aa34060e5124457c99e2220f9d1d3"
       },
+      "../src/message.event.ts": {
+        "version": "17d78b9af936ff87898d1c23dfa30f68ef706dd88ac3fb4038a5dba3f4171912",
+        "signature": "e9e35f1db166e62732ebf6897d7d166b19bcdbf8de0570bf4fd0bf4f697cae53"
+      },
       "../src/app.controller.ts": {
-        "version": "14cad386bc1e0dfe95ca543fc5d596eb1724e80d3a8787af9bb0018e1c77217a",
+        "version": "2504410155e89acf9a0a9f1a3d93828517a42a003b1970213541a33c6ee30853",
         "signature": "b0cc15f8f0b6a3f20a38269275b0c13e57cded68ec2cf505103ccda2507ec604"
       },
       "../src/app.service.ts": {
@@ -4765,9 +4769,16 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/message.event.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/app.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/microservices/index.d.ts",
+        "../src/message.event.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",

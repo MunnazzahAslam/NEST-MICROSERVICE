@@ -1,5 +1,6 @@
 import { Controller } from '@nestjs/common';
 import { EventPattern } from '@nestjs/microservices';
+import { NotificationDto } from './dto/notification.dto';
 import { NotificationService } from './notification.service';
 
 @Controller()
@@ -8,7 +9,7 @@ export class NotificationController {
 
 
   @EventPattern('data_updated')
-  async handleMessagePrinted(data: string) {
+  async handleMessagePrinted(data: NotificationDto) {
     return this.notificationService.printMessage(data);
   }
 }

@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.NotificationController = void 0;
 const common_1 = require("@nestjs/common");
 const microservices_1 = require("@nestjs/microservices");
+const notification_dto_1 = require("./dto/notification.dto");
 const notification_service_1 = require("./notification.service");
 let NotificationController = class NotificationController {
     constructor(notificationService) {
@@ -24,7 +25,7 @@ let NotificationController = class NotificationController {
 __decorate([
     (0, microservices_1.EventPattern)('data_updated'),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [String]),
+    __metadata("design:paramtypes", [notification_dto_1.NotificationDto]),
     __metadata("design:returntype", Promise)
 ], NotificationController.prototype, "handleMessagePrinted", null);
 NotificationController = __decorate([

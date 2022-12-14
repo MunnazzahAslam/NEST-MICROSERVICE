@@ -14,12 +14,13 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const microservices_1 = require("@nestjs/microservices");
+const message_event_1 = require("./message.event");
 let AppController = class AppController {
     constructor(client) {
         this.client = client;
     }
     getNotified() {
-        this.client.emit('data_updated', JSON.stringify({ data: 'Data updated!' }));
+        this.client.emit('data_updated', new message_event_1.Message('Data updated!'));
     }
 };
 __decorate([

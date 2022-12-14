@@ -1,5 +1,6 @@
 import { Controller, Get, Inject } from '@nestjs/common';
 import { ClientProxy } from '@nestjs/microservices';
+import { Message } from './message.event';
 
 @Controller()
 export class AppController {
@@ -7,6 +8,7 @@ export class AppController {
 
   @Get()
   getNotified() {
-    this.client.emit<any>('data_updated', JSON.stringify({data: 'Data updated!'}));
+    this.client.emit<any>('data_updated', new Message('Data updated!'));
+    return 'Data updated!';
   }
 }

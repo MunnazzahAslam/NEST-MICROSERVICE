@@ -9,9 +9,7 @@ import { Transport, ClientsModule } from '@nestjs/microservices';
       {
         name: 'NOTIFICATION_SERVICE', transport: Transport.RMQ,
         options: {
-          urls: ['amqp://localhost:Error: Socket closed abruptly 
-          during opening handshake
-          '],
+          urls: ['amqp://localhost:5672'],
           queue: 'user-messages',
           queueOptions: {
             durable: false

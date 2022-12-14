@@ -31,7 +31,7 @@ describe('AppController', () => {
 
   describe('root', () => {
     it('should return "Your data has been updated!"', () => {
-      expect(appController.getNotified()).toBe('Your data has been updated!');
+      expect(appController.getNotified()).toBe('Data updated!');
     });
   });
 });

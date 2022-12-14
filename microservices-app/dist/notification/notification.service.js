@@ -16,11 +16,10 @@ let NotificationService = class NotificationService {
     constructor(prisma) {
         this.prisma = prisma;
     }
-    async printMessage(label) {
+    async printMessage(data) {
         const notification = await this.prisma.notification.create({
             data: {
-                label: label,
-                content: label
+                label: data.label
             }
         });
         return notification;
